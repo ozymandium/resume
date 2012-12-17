@@ -11,36 +11,61 @@
   %\renewcommand{\rmdefault}{lgrcmr}
 
 \def\bull{\vrule height 0.8ex width .7ex depth -.1ex }
-% DEFINITIONS FOR RESUME
-\newcommand{\area}[2]{\vspace*{-9pt} \begin{verse}\textbf{#1}   #2 \end{verse}  }
-\newcommand{\lineunder}{\vspace*{-8pt} \\ \hspace*{-18pt} \hrulefill \\}
-\newcommand{\header}[1]{{\hspace*{-15pt}\vspace*{6pt} \textsc{#1}} \vspace*{-6pt} \lineunder}
-\newcommand{\employer}[3]{{ \textbf{#1} (#2)\\ \underline{\textbf{\emph{#3}}}\\  }}
-\newcommand{\contact}[3]{
-\vspace*{-8pt}
-\begin{center}
-{\LARGE \scshape {#1}}\\
-#2 \lineunder 
-#3
-\end{center}
-\vspace*{-8pt}
+
+% DEFINITIONS FOR RESUME %%%%%%%%%%%%%%%%%%%%%%%
+
+\newcommand{\area} [2] {
+	\vspace*{-9pt}
+	\begin{verse}
+		\textbf{#1}   #2
+	\end{verse} 
 }
-\newenvironment{achievements}{\begin{list}{$\bullet$}{\topsep 0pt \itemsep -2pt}}{\vspace*{4pt}\end{list}}
-\newcommand{\schoolwithcourses}[4]{
- \textbf{#1} #2 $\bullet$ #3\\ 
-#4 $\bullet$  Selected Coursework:\\
-\vspace*{5pt}
+
+\newcommand{\lineunder} {
+	\vspace*{-8pt} \\
+	\hspace*{-18pt} \hrulefill \\
 }
-\newcommand{\school}[4]{
- \textbf{#1} #2 $\bullet$ #3\\ 
-#4 \\
+
+\newcommand{\header} [1] {
+	{\hspace*{-15pt}\vspace*{6pt} \textsc{#1}} 
+	\vspace*{-6pt} \lineunder
 }
-% END RESUME DEFINITIONS
+
+\newcommand{\employer} [3] {
+	{ \textbf{#1} (#2)\\ \underline{\textbf{\emph{#3}}}\\  }
+}
+
+\newcommand{\contact} [3] {
+	\vspace*{-8pt}
+	\begin{center}
+		{\LARGE \scshape {#1}}\\
+		#2 \lineunder 	#3
+	\end{center}
+	\vspace*{-8pt}
+}
+
+\newenvironment{achievements}{
+	\begin{list}
+		{$\bullet$}{\topsep 0pt \itemsep -2pt}}{\vspace*{4pt}
+	\end{list}
+}
+
+\newcommand{\schoolwithcourses} [4] {
+	 \textbf{#1} #2 $\bullet$ #3\\ 
+	#4 \\
+	\vspace*{5pt}
+}
+
+\newcommand{\school} [4] {
+	 \textbf{#1} #2 $\bullet$ #3\\ 
+	#4 \\
+}
+% END RESUME DEFINITIONS %%%%%%%%%%%%%%%%%%%%%%%
 
 \begin{document}
 
-\small
-\smallskip
+%\small
+%\smallskip
 \vspace*{-44pt}
 
 \contact{Robert G. Cofield}
@@ -51,28 +76,49 @@
 
 \schoolwithcourses{Auburn University}{Auburn, AL, U.S.A.}{Bachelor of Science in Mechanical Eng., May 2013}
 {Cumulative GPA: 3.58/4.00}
-	\area{Mechanical Engineering}{ CAD $\cdot$ Modelling and Control of Dynamical Systems $\cdot$ FEA$\cdot$ Mechanics of Materials $\cdot$ }
-	\area{Mathematics}{Multivariable Calculus $\cdot$ Linear Algebra $\cdot$ Numerical Analysis $\cdot$ Differential Models}
-
-\header{Work History}
-\employer{GPS and Vehicle Dynamics Laboratory}{2012 - Present}{Assistant Researcher}
+	\area{Mechanical Engineering}{ CAD $\cdot$ Modelling and Control of Dynamical Systems $\cdot$ FEA $\cdot $ Mechatronics  Mechanics of Materials $\cdot$ Machining $\cdot$ Microcontroller Programming $\cdot$ Signal Conditioning and Processing $\cdot$ Sensor Calibration}
+	\area{Mathematics}{Multivariable Calculus $\cdot$ Linear Algebra $\cdot$ Numerical Analysis $\cdot$ Differential Modelling System Identification and Characterization}
 	\begin{achievements}
-	\item Designed and implemented data bridge between two message passing architectures for flexible error calculation and visualization of multiply derived position solutions.
-	\item Created GPS reciever interface for integration with existing systems. Devised and carried out performance tests which experimentally compared 
-	\item 
+	\item Investigated robotic leg mechanism design for honors contract course credit. Modelled kinematics and dynamics of twelve-bar Jansen linkage to evaluate load transportation potential.
+	\item Continued development of teamwork skills thoughout numerous successful group projects.
+	\item Honed communication skills during course in public speaking.
+	\item Extended metal working experience during machine shop certification.
 	\end{achievements}
 
 
+\header{Work History}
 
-\header{Skills}
+\employer{GPS and Vehicle Dynamics Laboratory}{May 2012 - Present}{Assistant Researcher}
+	\begin{achievements}
+	\item Designed and implemented data bridge between two message passing architectures for flexible, robust error calculation and visualization of multiply derived position solutions. Optimized algorithm through real-time testing in fully instrumented vehicle.
+	\item Wrote GPS reciever interface and integrated with existing systems. Devised and carried out performance tests which experimentally compared new receiver to benchmark specifications.
+	\item Created an efficient graphical user interface to aid vehicle drivers in path fidelity and collision avoidance during low-visibility caravanning scenarios.
+	\item Trained coworkers in lighweight robotic operating systems while programming pointcloud-based waypoint identification functionality for miniature autonomous ground vehicle.
+	\end{achievements}
+
+\employer{Fargason Contracting, Inc}{May 2009 - January 2010}{Assistant to Licensed Contractor and Electrician}
+	\begin{achievements}
+	\item Trained in operating and maintaining an extensive array of heavy machinery and power tools.
+	\item Learned equipment and chemical safety procedures in both industrial and residential settings.
+	\end{achievements}
+
+
+\header{Skills and Relevant Experience}
 \begin{achievements}
-\item C++, Python, MATLAB, Unix shell scripting, Solid Edge, ANSYS
-\item ROS, MOOS
+\item C++, Python, MATLAB, Linux shell scripting, \LaTeX
+\item ROS, MOOS,  Solid Edge, ANSYS
+\item Repaired and tuned a cluth-actuated, rear wheel differential steering system on commercial mower with trailer dynamics, drawing on experience with zero-point-turn vehicle behavior.
 \end{achievements}
+
 
 \header{Honors and Awards}
 \begin{achievements}
-\item  Got stuff.
+\item  Spirit of Auburn Founder's Scholarship
+\item ConocoPhillips Mechanical Engineering Scholarship
+\item Dean's List, Fall 2009 - Summer 2011
+\item Tau Beta Pi Engineering Honor Society
+\item Pi Tau Sigma Mechanical Engineering Honor Society
+\item Auburn University Linux Club
 \end{achievements}
 
 
