@@ -1,0 +1,35 @@
+
+<!-- saved from url=(0062)https://raw.github.com/github/gitignore/master/LaTeX.gitignore -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"></head><body><pre style="word-wrap: break-word; white-space: pre-wrap;">*.acn
+*.acr
+*.alg
+*.aux
+*.bbl
+*.blg
+*.dvi
+*.fdb_latexmk
+*.glg
+*.glo
+*.gls
+*.idx
+*.ilg
+*.ind
+*.ist
+*.lof
+*.log
+*.lot
+*.maf
+*.mtc
+*.mtc0
+*.nav
+*.nlo
+*.out
+*.pdfsync
+*.ps
+*.snm
+*.synctex.gz
+*.toc
+*.vrb
+*.xdy
+*.tdo
+</pre><div style="position: fixed; top: 4px; right: 4px; color: black; background-color: rgb(255, 255, 128); font-family: &#39;Lucida Console&#39;, &#39;Courier New&#39;, Mono; text-align: right; max-width: 600px; font-size: 80%;"></div></body></html>
